@@ -1,4 +1,12 @@
 // The site remains fully navigable without JavaScript.
+// Keep anchor targets clear of the sticky header, including when navigation wraps.
+const siteHeader = document.querySelector('.site-header');
+if (siteHeader && 'ResizeObserver' in window) {
+    new ResizeObserver(() => {
+        document.documentElement.style.setProperty('--header-height', `${siteHeader.getBoundingClientRect().height}px`);
+    }).observe(siteHeader);
+}
+
 document.querySelectorAll('[data-year]').forEach((node) => {
     node.textContent = new Date().getFullYear();
 });
