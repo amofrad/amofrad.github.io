@@ -137,7 +137,7 @@ h2 { font-size: clamp(1.85rem, 3vw, 2.2rem); }
 .site-footer p, .footer-contact a { font-size: .875rem; }
 .site-footer p { color: var(--muted); margin-top: 5px; }
 .footer-contact { text-align: right; }
-.subpage { padding-top: 58px; }
+.subpage { padding-top: 44px; }
 .subpage-intro { max-width: 760px; margin-bottom: 46px; }
 .subpage-lead { font-size: 1.1875rem; line-height: 1.7; margin-top: 19px; }
 .subpage .section-heading .role-meta { margin: 14px 0 0; }
