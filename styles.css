@@ -47,7 +47,7 @@
     }
 }
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-height) + 1.5rem); }
+html { scroll-behavior: smooth; scroll-padding-top: var(--header-height); }
 body { margin: 0; background: var(--paper); color: var(--text); font: 1rem/1.7 var(--sans); -webkit-font-smoothing: antialiased; }
 img { display: block; max-width: 100%; height: auto; }
 a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: .22em; }
@@ -109,6 +109,8 @@ h2 { font-size: clamp(1.85rem, 3vw, 2.2rem); }
 .portrait figcaption, .intro-email { font-size: 1.0625rem; font-weight: 500; }
 .portrait figcaption a, .intro-email a { text-decoration: none; }
 .section { padding: 34px 0 44px; border-top: 1px solid var(--line); }
+/* Let the last section reach the navbar even in a tall viewport. */
+#activity { min-height: calc(100dvh - var(--header-height)); }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 30px; }
 .section-heading .eyebrow { margin-bottom: 11px; }
 .section-note { font-size: .875rem; color: var(--muted); padding-bottom: 3px; text-align: right; }
@@ -276,6 +278,7 @@ h2 { font-size: clamp(1.85rem, 3vw, 2.2rem); }
     h1, .intro h1 { font-size: 26pt; }
     h2 { font-size: 20pt; }
     .section { padding-block: 22px; }
+    #activity { min-height: 0; }
     .paper { break-inside: avoid; gap: 20px; grid-template-columns: 125px 1fr; }
     .paper h3 { font-size: 17pt; }
     .two-column, .activity-grid { grid-template-columns: 1fr 1fr; gap: 26px; }
