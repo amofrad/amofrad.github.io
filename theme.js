@@ -19,8 +19,12 @@
         if (color) color.content = theme === 'dark' ? '#141c24' : '#faf9f6';
         const toggle = document.querySelector('.theme-toggle');
         if (toggle) {
-            toggle.setAttribute('aria-pressed', String(theme === 'dark'));
-            toggle.title = `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`;
+            const nextTheme = theme === 'dark' ? 'light' : 'dark';
+            const action = `Switch to ${nextTheme} mode`;
+            toggle.setAttribute('aria-label', action);
+            toggle.title = action;
+            const label = toggle.querySelector('.theme-toggle-label');
+            if (label) label.textContent = nextTheme === 'dark' ? 'Dark mode' : 'Light mode';
         }
     }
 
