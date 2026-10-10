@@ -133,6 +133,10 @@ h2 { font-size: clamp(1.85rem, 3vw, 2.2rem); }
 .role-meta { color: var(--muted); font-size: .875rem; margin-bottom: 12px; }
 .text-link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: .9375rem; }
 .two-column .text-link { margin-top: 10px; }
+.teaching-section .two-column { grid-template-areas: "teaching mentoring" "details mentoring"; row-gap: 0; align-items: start; }
+.teaching-overview { grid-area: teaching; }
+.mentoring-overview { grid-area: mentoring; }
+.teaching-section .text-link { grid-area: details; justify-self: start; }
 .activity-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 65px; }
 .activity-list { list-style: none; margin: 0; padding: 0; }
 .activity-list li { display: grid; grid-template-columns: 89px minmax(0, 1fr); gap: 19px; padding: 17px 0; border-bottom: 1px solid var(--line); }
@@ -201,6 +205,8 @@ h2 { font-size: clamp(1.85rem, 3vw, 2.2rem); }
     .paper h3 { font-size: 1.3rem; }
     .two-column, .activity-grid, .course-grid { grid-template-columns: 1fr; gap: 28px; }
     .two-column p { max-width: none; }
+    .teaching-section .two-column { grid-template-areas: "teaching" "mentoring" "details"; }
+    .mentoring-overview { margin-top: 28px; }
     .service { border-left: 0; border-top: 1px solid var(--line); padding: 26px 0 0; }
     .service-list li { margin-top: 14px; }
     .subpage { padding-top: 34px; }
@@ -273,5 +279,7 @@ h2 { font-size: clamp(1.85rem, 3vw, 2.2rem); }
     .paper { break-inside: avoid; gap: 20px; grid-template-columns: 125px 1fr; }
     .paper h3 { font-size: 17pt; }
     .two-column, .activity-grid { grid-template-columns: 1fr 1fr; gap: 26px; }
+    .teaching-section .two-column { grid-template-areas: "teaching mentoring" "details mentoring"; }
+    .mentoring-overview { margin-top: 0; }
     a { color: black; }
 }
