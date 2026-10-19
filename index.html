@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ali Kaazempur-Mofrad | UCLA Statistics</title>
-    <meta name="description" content="UCLA Statistics PhD candidate developing statistical methods for decision-making under uncertainty, market design, fairness, and LLM evaluation.">
+    <meta name="description" content="UCLA Statistics PhD candidate developing statistical methods for decision-making under uncertainty, market design, fairness, and LLM uncertainty.">
     <meta name="theme-color" content="#faf9f6">
     <link rel="canonical" href="https://alimofrad.com/">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -12,13 +12,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Ali Kaazempur-Mofrad | UCLA Statistics">
-    <meta property="og:description" content="UCLA Statistics PhD candidate developing statistical methods for decision-making under uncertainty, market design, fairness, and LLM evaluation.">
+    <meta property="og:description" content="UCLA Statistics PhD candidate developing statistical methods for decision-making under uncertainty, market design, fairness, and LLM uncertainty.">
     <meta property="og:url" content="https://alimofrad.com/">
     <meta property="og:image" content="https://alimofrad.com/og-image.jpg">
     <meta property="og:image:alt" content="Ali Kaazempur-Mofrad, UCLA Statistics">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ali Kaazempur-Mofrad | UCLA Statistics">
-    <meta name="twitter:description" content="UCLA Statistics PhD candidate developing statistical methods for decision-making under uncertainty, market design, fairness, and LLM evaluation.">
+    <meta name="twitter:description" content="UCLA Statistics PhD candidate developing statistical methods for decision-making under uncertainty, market design, fairness, and LLM uncertainty.">
     <meta name="twitter:image" content="https://alimofrad.com/og-image.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -96,7 +96,7 @@
                 <p class="intro-email"><a href="mailto:amofrad@ucla.edu">amofrad@ucla.edu</a></p>
             </div>
             <p class="intro-statement">Statistical methods for decision-making under uncertainty</p>
-            <p class="intro-description">My research connects statistics and mechanism design to understand how information can be elicited and used to guide decisions, with applications to academic markets, fairness in resource allocation, and uncertainty reporting by large language models.</p>
+            <p class="intro-description">My research connects statistics and mechanism design to understand how preferences and beliefs can be elicited and used for inference and decision-making, with applications to academic markets, fairness in resource allocation, and uncertainty reporting by large language models.</p>
             <p class="affiliation">Advised by <a href="https://www.xiaowudai.org/">Xiaowu Dai</a> · <a href="https://www.xiaowudai.org/group">SCALE Lab</a></p>
             <div class="profile-links" aria-label="Profile links">
                 <a class="button" href="CV.pdf">Curriculum vitae <span>PDF</span></a>
@@ -128,7 +128,7 @@
                     <h3 id="kidney-title"><a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-20/issue-1/A-data-envelopment-analysis-approach-for-assessing-fairness-in-resource/10.1214/25-AOAS2128.full">A Data Envelopment Analysis Approach for Assessing Fairness in Resource Allocation: Application to Kidney Exchange Programs</a></h3>
                     <p class="authors"><strong>Ali Kaazempur-Mofrad</strong> and Xiaowu Dai</p>
                     <p class="venue"><em>The Annals of Applied Statistics</em>, 20(1):385–407, 2026</p>
-                    <p class="paper-summary">Fairness in kidney exchange involves waiting time, access to donor organs, and transplant outcomes. We develop a conditional data envelopment analysis framework to evaluate these dimensions together, with conformal prediction to quantify uncertainty. An analysis of U.S. transplant data identifies disparities across ethnic groups.</p>
+                    <p class="paper-summary">Fairness in kidney exchange depends on several outcomes, including waiting time, kidney quality, and graft survival. We develop a conditional data envelopment analysis framework that assesses fairness across these outcomes together, with conformal prediction intervals that provide finite-sample, group-conditional coverage. Using U.S. transplant data, we find that disparities across ethnic groups differ by outcome.</p>
                     <ul class="paper-links" aria-label="Kidney exchange research links">
                         <li><a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-20/issue-1/A-data-envelopment-analysis-approach-for-assessing-fairness-in-resource/10.1214/25-AOAS2128.full">Paper</a></li>
                         <li><a href="https://github.com/amofrad/Kidney-Exchange-DEA">Code</a></li>
@@ -141,7 +141,7 @@
                 <div class="paper-body">
                     <h3 id="market-title"><a href="https://arxiv.org/abs/2604.14230">A Statistical Market-Design Framework for Academic Job Markets</a></h3>
                     <p class="authors"><strong>Ali Kaazempur-Mofrad</strong>, Xiaowu Dai, and Xuming He</p>
-                    <p class="paper-summary">Departments allocate interviews with limited information about candidates’ interest. We combine structured preference signals with confidence-calibrated statistical ranking to guide interview selection. The framework studies incentives for truthful participation and improves matching outcomes in simulations informed by U.S. statistics departments.</p>
+                    <p class="paper-summary">Departments allocate interviews with limited information about candidates’ willingness to accept an offer. We introduce a preference-signaling mechanism in which candidates share a standardized questionnaire with the departments they choose, and construct simultaneous confidence bounds on candidate ranks to guide interview selection. We characterize incentives for truthful participation, and simulations informed by U.S. statistics departments show higher placement rates and fewer unfilled positions.</p>
                     <ul class="paper-links" aria-label="Academic job markets research links">
                         <li><a href="https://arxiv.org/abs/2604.14230">Paper</a></li>
                         <li><a href="https://academic-markets.github.io/">Project website</a></li>
@@ -155,7 +155,7 @@
                 <div class="paper-body">
                     <h3 id="llm-title">Beyond a Single Answer: Proper Scoring of LLM Uncertainty</h3>
                     <p class="authors"><strong>Ali Kaazempur-Mofrad</strong>, Xiaowu Dai, and Xuming He</p>
-                    <p class="paper-summary">A single answer can hide a language model’s uncertainty over alternatives. We study how proper scoring rules can elicit probability reports across plausible answers, and how those reports can support decisions under uncertainty.</p>
+                    <p class="paper-summary">A single answer can hide a language model’s uncertainty over alternatives. We design a mechanism based on a proper scoring rule that elicits truthful uncertainty reports, in which the model assigns probabilities to its candidate answers and to “I don’t know.” A single report then supports decisions at any tolerance for error, including a threshold rule that controls the error rate among returned answers without requiring calibrated reports.</p>
                     <ul class="paper-links" aria-label="LLM uncertainty research links">
                         <li><a href="https://github.com/amofrad/llm-log-score">Code &amp; experiments</a></li>
                     </ul>
@@ -170,13 +170,13 @@
             <div class="teaching-overview">
                 <h3 class="small-heading">Teaching at UCLA</h3>
                 <p class="role-meta">Teaching Assistant · 2023–present</p>
-                <p>I have taught as a TA across undergraduate and graduate courses in statistical theory, regression, computing, Monte Carlo methods, consulting, and large language models.</p>
+                <p>I have taught as a TA across undergraduate and graduate courses in statistical theory, regression, computing, Monte Carlo methods, consulting, and large language models. For the graduate course on large language models, I designed a sequence of <a href="teaching.html#course-materials">Python labs</a> that build from next-token prediction to reinforcement learning.</p>
             </div>
             <div class="mentoring-overview">
                 <h3 class="small-heading">Mentoring</h3>
-                <p>I currently mentor one master’s student in Statistics and two undergraduates in Computer Science and Statistics and Data Science. I also served as a mentor for ASA DataFest at UCLA from 2023 to 2026.</p>
+                <p>I currently mentor one master’s student in Statistics and two undergraduates in Computer Science and Statistics and Data Science on research projects in LLM uncertainty and matching markets. I also mentored undergraduate teams at ASA DataFest at UCLA from 2023 to 2026.</p>
             </div>
-            <a class="text-link" href="teaching.html">More on teaching &amp; mentoring →</a>
+            <a class="text-link" href="teaching.html">Courses, materials &amp; mentoring →</a>
         </div>
     </section>
 
@@ -186,7 +186,7 @@
             <div>
                 <h3 class="small-heading">Presentations</h3>
                 <ol class="activity-list">
-                    <li><div class="activity-date"><time datetime="2026-12-15">Dec 2026</time><span class="upcoming" data-upcoming-end="2026-12-19T00:00:00Z">Upcoming</span></div><div><h4>IMS International Conference on Statistics and Data Science</h4><p><span class="presentation-type presentation-type-talk">Talk</span> Beyond a Single Answer: Proper Scoring of LLM Uncertainty</p></div></li>
+                    <li><div class="activity-date"><time datetime="2026-12-15">Dec 2026</time><span class="upcoming" data-upcoming-end="2026-12-19T00:00:00Z">Upcoming</span></div><div><h4>IMS International Conference on Statistics and Data Science (ICSDS)</h4><p><span class="presentation-type presentation-type-talk">Talk</span> Beyond a Single Answer: Proper Scoring of LLM Uncertainty</p></div></li>
                     <li><div class="activity-date"><time datetime="2026-11-13">Nov 2026</time><span class="upcoming" data-upcoming-end="2026-11-14T00:00:00Z">Upcoming</span></div><div><h4>Conference on Statistical Foundations of AI</h4><p><span class="presentation-type presentation-type-poster">Poster</span> Beyond a Single Answer: Proper Scoring of LLM Uncertainty</p></div></li>
                     <li><div class="activity-date"><time datetime="2026-10-08">Oct 2026</time></div><div><h4>Shapiro Statistics Student Seminar &amp; Social, UCLA</h4><p><span class="presentation-type presentation-type-talk">Talk</span> Research overview: fairness in resource allocation, statistical market design, and proper scoring of LLM uncertainty</p></div></li>
                     <li><div class="activity-date"><time datetime="2026-09-23">Sep 2026</time></div><div><h4>StatsFest, UCLA</h4><p><span class="presentation-type presentation-type-poster">Poster</span> Beyond a Single Answer: Proper Scoring of LLM Uncertainty</p></div></li>
@@ -197,14 +197,14 @@
             <aside class="service" aria-label="Awards and professional service">
                 <h3 class="small-heading">Awards &amp; fellowships</h3>
                 <ul class="service-list">
-                    <li><strong>IMS International Conference on Statistics and Data Science Student Travel Award</strong><span>2026</span></li>
+                    <li><strong>IMS International Conference on Statistics and Data Science (ICSDS) Student Travel Award</strong><span>2026</span></li>
                     <li><strong>Conference on Statistical Foundations of AI Travel Award</strong><span>NSF-supported · 2026</span></li>
                     <li><strong>Summer Mentored Research Fellowship</strong><span>UCLA Statistics &amp; Data Science · 2023</span></li>
                 </ul>
                 <h3 class="small-heading">Service</h3>
                 <ul class="service-list">
-                    <li><strong>Journal reviewer</strong><span><em>Journal of the American Statistical Association</em>, <em>Stat</em>, and <em>PLOS One</em></span></li>
-                    <li><strong>Conference website developer</strong><span><a href="https://statfoundations-ai.github.io/">Conference on Statistical Foundations of AI</a> · 2026</span></li>
+                    <li><strong>Journal reviewer</strong><span><em>Journal of the American Statistical Association</em> (JASA), <em>Stat</em>, and <em>PLOS One</em></span></li>
+                    <li><strong>Conference organization support</strong><span><a href="https://statfoundations-ai.github.io/">Conference on Statistical Foundations of AI</a> · 2026</span></li>
                     <li><strong>Director of Discretionary Funding</strong><span>UCLA Graduate Students Association · 2024–2026</span></li>
                 </ul>
             </aside>
