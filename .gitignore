@@ -2,3 +2,8 @@
 /CV.tex
 
 .DS_Store
+
+# LaTeX build files
+*.aux
+*.log
+*.out

@@ -129,6 +129,7 @@ h2 { font-size: clamp(1.85rem, 3vw, 2.2rem); }
 .paper-summary { margin-top: 14px; line-height: 1.7; max-width: 800px; }
 .paper-links { display: flex; flex-wrap: wrap; gap: 8px 24px; list-style: none; padding: 0; margin: 9px 0 -7px; }
 .paper-links a { display: inline-flex; align-items: center; min-height: 44px; font-size: .875rem; font-weight: 500; }
+.paper-links .link-note { display: inline-flex; align-items: center; min-height: 44px; font-size: .875rem; color: var(--muted); }
 .small-heading { font-size: 1.0625rem; font-weight: 600; line-height: 1.4; margin-bottom: 10px; }
 .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; }
 .two-column p { max-width: 520px; }
